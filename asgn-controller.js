@@ -1,4 +1,4 @@
-var Assignment = require('asgn-model');
+var Assignment = require('./asgn-model');
 
 //Add assignments
 exports.addAsgn = (req, res) => {
