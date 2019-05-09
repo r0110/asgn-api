@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-var asgnController = require('asgn-controller');
+var asgnController = require('./asgn-controller');
 
 //POST method
 router.post('/assignments', asgnController.addAsgn);
@@ -14,3 +14,5 @@ router.put('/assignments', asgnController.updateAsgn);
 
 //DELETE method
 router.delete('/assignements', asgnController.deleteAsgn);
+
+module.exports = router;
