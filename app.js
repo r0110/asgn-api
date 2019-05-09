@@ -4,7 +4,7 @@ const PORT = process.env.PORT || 3500;
 var bodyParser = require('body-parser');
 
 //Router
-var asgnRoute = require('asgn-router');
+var asgnRoute = require('./asgn-router');
 
 //Database
 var mongoose = require('mongoose')
