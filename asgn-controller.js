@@ -22,7 +22,7 @@ exports.addAsgn = (req, res) => {
 exports.findAll = (req, res) => {
     Assignment.find({}, (err, assignments) => {
         var asgns = {};
-        assignments.foreach(function (asgn) {
+        assignments.foreach(function (err, asgn) {
             asgn = asgns[Assignmente._id];
         },
         res.json(asgns));
