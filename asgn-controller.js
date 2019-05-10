@@ -18,6 +18,17 @@ exports.addAsgn = (req, res) => {
         });
 }
 
+//List all assignments
+exports.findAll = (req, res) => {
+    Assignment.find({}, (err, assignments) => {
+        var asgns = {};
+        assignments.foreach(function (asgn) {
+            asgn = asgns[Assignmente._id];
+        },
+        res.json(asgns));
+    });
+}
+
 //Find one assignment
 exports.findAsgn = (req, res) => {
     if(!req.body) {

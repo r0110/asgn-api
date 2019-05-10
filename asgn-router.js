@@ -9,6 +9,9 @@ router.post('/assignments', asgnController.addAsgn);
 //GET method
 router.get('/assignments', asgnController.findAsgn);
 
+//GET method
+router.get('/assignments', asgnController.findAll);
+
 //PUT method
 router.put('/assignments', asgnController.updateAsgn);
 
